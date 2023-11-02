@@ -1,0 +1,10 @@
+C:\Users\resemoney\Desktop\C# Practice\arithmetic\arithmetic\bin\Debug\arithmetic.exe.config
+C:\Users\resemoney\Desktop\C# Practice\arithmetic\arithmetic\bin\Debug\arithmetic.exe
+C:\Users\resemoney\Desktop\C# Practice\arithmetic\arithmetic\bin\Debug\arithmetic.pdb
+C:\Users\resemoney\Desktop\C# Practice\arithmetic\arithmetic\obj\Debug\arithmetic.csprojAssemblyReference.cache
+C:\Users\resemoney\Desktop\C# Practice\arithmetic\arithmetic\obj\Debug\arithmetic.Properties.Resources.resources
+C:\Users\resemoney\Desktop\C# Practice\arithmetic\arithmetic\obj\Debug\arithmetic.csproj.GenerateResource.cache
+C:\Users\resemoney\Desktop\C# Practice\arithmetic\arithmetic\obj\Debug\arithmetic.csproj.CoreCompileInputs.cache
+C:\Users\resemoney\Desktop\C# Practice\arithmetic\arithmetic\obj\Debug\arithmetic.exe
+C:\Users\resemoney\Desktop\C# Practice\arithmetic\arithmetic\obj\Debug\arithmetic.pdb
+C:\Users\resemoney\Desktop\C# Practice\arithmetic\arithmetic\obj\Debug\arithmetic.btnSubtract.resources

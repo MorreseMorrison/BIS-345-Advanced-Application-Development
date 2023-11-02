@@ -1,0 +1,10 @@
+C:\Users\resemoney\Desktop\C# Practice\Numbers\Numbers\bin\Debug\Numbers.exe.config
+C:\Users\resemoney\Desktop\C# Practice\Numbers\Numbers\bin\Debug\Numbers.exe
+C:\Users\resemoney\Desktop\C# Practice\Numbers\Numbers\bin\Debug\Numbers.pdb
+C:\Users\resemoney\Desktop\C# Practice\Numbers\Numbers\obj\Debug\Numbers.csprojAssemblyReference.cache
+C:\Users\resemoney\Desktop\C# Practice\Numbers\Numbers\obj\Debug\Numbers.Form1.resources
+C:\Users\resemoney\Desktop\C# Practice\Numbers\Numbers\obj\Debug\Numbers.Properties.Resources.resources
+C:\Users\resemoney\Desktop\C# Practice\Numbers\Numbers\obj\Debug\Numbers.csproj.GenerateResource.cache
+C:\Users\resemoney\Desktop\C# Practice\Numbers\Numbers\obj\Debug\Numbers.csproj.CoreCompileInputs.cache
+C:\Users\resemoney\Desktop\C# Practice\Numbers\Numbers\obj\Debug\Numbers.exe
+C:\Users\resemoney\Desktop\C# Practice\Numbers\Numbers\obj\Debug\Numbers.pdb
