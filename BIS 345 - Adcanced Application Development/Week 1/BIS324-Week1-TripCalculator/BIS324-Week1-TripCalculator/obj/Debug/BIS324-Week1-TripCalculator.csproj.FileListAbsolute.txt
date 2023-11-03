@@ -1,0 +1,10 @@
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 1\BIS324-Week1-TripCalculator\BIS324-Week1-TripCalculator\bin\Debug\BIS324-Week1-TripCalculator.exe.config
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 1\BIS324-Week1-TripCalculator\BIS324-Week1-TripCalculator\bin\Debug\BIS324-Week1-TripCalculator.exe
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 1\BIS324-Week1-TripCalculator\BIS324-Week1-TripCalculator\bin\Debug\BIS324-Week1-TripCalculator.pdb
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 1\BIS324-Week1-TripCalculator\BIS324-Week1-TripCalculator\obj\Debug\BIS324-Week1-TripCalculator.csprojAssemblyReference.cache
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 1\BIS324-Week1-TripCalculator\BIS324-Week1-TripCalculator\obj\Debug\BIS324_Week1_TripCalculator.Form1.resources
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 1\BIS324-Week1-TripCalculator\BIS324-Week1-TripCalculator\obj\Debug\BIS324_Week1_TripCalculator.Properties.Resources.resources
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 1\BIS324-Week1-TripCalculator\BIS324-Week1-TripCalculator\obj\Debug\BIS324-Week1-TripCalculator.csproj.GenerateResource.cache
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 1\BIS324-Week1-TripCalculator\BIS324-Week1-TripCalculator\obj\Debug\BIS324-Week1-TripCalculator.csproj.CoreCompileInputs.cache
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 1\BIS324-Week1-TripCalculator\BIS324-Week1-TripCalculator\obj\Debug\BIS324-Week1-TripCalculator.exe
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 1\BIS324-Week1-TripCalculator\BIS324-Week1-TripCalculator\obj\Debug\BIS324-Week1-TripCalculator.pdb
