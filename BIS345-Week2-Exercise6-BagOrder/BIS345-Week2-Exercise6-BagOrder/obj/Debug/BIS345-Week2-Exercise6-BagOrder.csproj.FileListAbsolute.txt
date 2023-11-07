@@ -1,0 +1,10 @@
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 2\BIS345-Week2-Exercise6-BagOrder\BIS345-Week2-Exercise6-BagOrder\bin\Debug\BIS345-Week2-Exercise6-BagOrder.exe.config
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 2\BIS345-Week2-Exercise6-BagOrder\BIS345-Week2-Exercise6-BagOrder\bin\Debug\BIS345-Week2-Exercise6-BagOrder.exe
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 2\BIS345-Week2-Exercise6-BagOrder\BIS345-Week2-Exercise6-BagOrder\bin\Debug\BIS345-Week2-Exercise6-BagOrder.pdb
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 2\BIS345-Week2-Exercise6-BagOrder\BIS345-Week2-Exercise6-BagOrder\obj\Debug\BIS345-Week2-Exercise6-BagOrder.csprojAssemblyReference.cache
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 2\BIS345-Week2-Exercise6-BagOrder\BIS345-Week2-Exercise6-BagOrder\obj\Debug\BIS345_Week2_Exercise6_BagOrder.QuantityComboBox1.resources
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 2\BIS345-Week2-Exercise6-BagOrder\BIS345-Week2-Exercise6-BagOrder\obj\Debug\BIS345_Week2_Exercise6_BagOrder.Properties.Resources.resources
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 2\BIS345-Week2-Exercise6-BagOrder\BIS345-Week2-Exercise6-BagOrder\obj\Debug\BIS345-Week2-Exercise6-BagOrder.csproj.GenerateResource.cache
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 2\BIS345-Week2-Exercise6-BagOrder\BIS345-Week2-Exercise6-BagOrder\obj\Debug\BIS345-Week2-Exercise6-BagOrder.csproj.CoreCompileInputs.cache
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 2\BIS345-Week2-Exercise6-BagOrder\BIS345-Week2-Exercise6-BagOrder\obj\Debug\BIS345-Week2-Exercise6-BagOrder.exe
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 2\BIS345-Week2-Exercise6-BagOrder\BIS345-Week2-Exercise6-BagOrder\obj\Debug\BIS345-Week2-Exercise6-BagOrder.pdb
