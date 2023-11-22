@@ -1,0 +1,10 @@
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 4\BIS345-Week4-Exercise6-WeightCon\BIS345-Week4-Exercise6-WeightCon\bin\Debug\BIS345-Week4-Exercise6-WeightCon.exe.config
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 4\BIS345-Week4-Exercise6-WeightCon\BIS345-Week4-Exercise6-WeightCon\bin\Debug\BIS345-Week4-Exercise6-WeightCon.exe
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 4\BIS345-Week4-Exercise6-WeightCon\BIS345-Week4-Exercise6-WeightCon\bin\Debug\BIS345-Week4-Exercise6-WeightCon.pdb
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 4\BIS345-Week4-Exercise6-WeightCon\BIS345-Week4-Exercise6-WeightCon\obj\Debug\BIS345-Week4-Exercise6-WeightCon.csprojAssemblyReference.cache
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 4\BIS345-Week4-Exercise6-WeightCon\BIS345-Week4-Exercise6-WeightCon\obj\Debug\BIS345_Week4_Exercise6_WeightCon.Form1.resources
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 4\BIS345-Week4-Exercise6-WeightCon\BIS345-Week4-Exercise6-WeightCon\obj\Debug\BIS345_Week4_Exercise6_WeightCon.Properties.Resources.resources
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 4\BIS345-Week4-Exercise6-WeightCon\BIS345-Week4-Exercise6-WeightCon\obj\Debug\BIS345-Week4-Exercise6-WeightCon.csproj.GenerateResource.cache
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 4\BIS345-Week4-Exercise6-WeightCon\BIS345-Week4-Exercise6-WeightCon\obj\Debug\BIS345-Week4-Exercise6-WeightCon.csproj.CoreCompileInputs.cache
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 4\BIS345-Week4-Exercise6-WeightCon\BIS345-Week4-Exercise6-WeightCon\obj\Debug\BIS345-Week4-Exercise6-WeightCon.exe
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 4\BIS345-Week4-Exercise6-WeightCon\BIS345-Week4-Exercise6-WeightCon\obj\Debug\BIS345-Week4-Exercise6-WeightCon.pdb
