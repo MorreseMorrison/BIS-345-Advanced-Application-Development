@@ -14,20 +14,8 @@ namespace BIS345_Week4_Exercise6_WeightCon
     {
 
 
+        //(Class - 1P) [Parent], [Abstract], [3 Methods]
          public class WeightConverter {
-
-
-            public int FinalPoundsToKilogramsConvertedValue { get; set; }
-
-            public string FinalPoundsToOuncesConvertedValue { get; set; }
-
-            public string FinalPoundsToGramsConvertedValue { get; set; }
-
-
-            public void PoundsToKiloGramsMethod()
-            {
-
-            }
 
             public void PoundsToOuncesMethod()
             {
@@ -39,43 +27,38 @@ namespace BIS345_Week4_Exercise6_WeightCon
 
             }
 
-            public void TestMethod()
+            public string PoundsToKilogramsMethod(double InputNumber)
             {
-                string message = "test";
-                MessageBox.Show(message);
+                //*(Method - 1) = Pounds To Kilograms Method. This Method, When Called Will Receive An Input
+                //From An Object That Is Created From The Child Class "class PoundsToKilograms", That User Input
+                //Is Then Fed Into This Method As Type "double InputNumber). InputNumber Is Then Multiplied
+                //By 0.454, And Fed Into The "Answer" Variable Which Is Of Type Double. "Answer" Is Then Converted
+                //To A String And Assigned To The Return Variable "Answerout". From There That Value Is Printed To
+                //The "KiloGramsTextBox.Text" Text Box.
 
+                //**2 Variables**//
+                double Answer; //This Variable Is Assigned After The Input Number From The User Is Multiplied By 0.454
+                string Answerout; //This Variable Is The Return Variable Of This Function Which Is Of Type String
+                //**2 Variables**//
+
+                //**CALCULATION**//
+
+                //(Code Block - 1)
+                Answer = InputNumber * 0.454;
+
+                //(Code Block - 2)
+                Answerout = Convert.ToString(Answer);
+
+                //**END CALCULATION**//
+
+                //(Code Block -3)
+                return Answerout;
 
             }
 
-            public string TestMathMethod(int firstNumber, int secondNumber)
-            {
+          }
 
-
-
-                //*I CAN CONVERT FROM HERE THEN RETURN A STRING*//
-
-                int answer;
-                string answerout;
-
-                answer = firstNumber - secondNumber;
-
-                // string answer2 = Convert.ToString(answer);
-
-                answerout = Convert.ToString(answer);
-
-
-               MessageBox.Show(answer.ToString());
-        
-                return answerout;
-
-                //How do we access this return value and attach it to a textbox?
-
-            }
-
-           
-
-        }
-
+        //(Class - 1C) [Child Of WeightConverter Parent Class]
 
         class PoundsToKiloGrams : WeightConverter{
 
@@ -83,7 +66,7 @@ namespace BIS345_Week4_Exercise6_WeightCon
 
             }
 
-
+        //(Class - 2C) [Child Of WeightConverter Parent Class]
         class PoundsToOunces : WeightConverter
             {
 
@@ -91,7 +74,7 @@ namespace BIS345_Week4_Exercise6_WeightCon
 
             }
 
-
+        //(Class - 3C) [Child Of WeightConverter Parent Class]
         class PoundsToGrams : WeightConverter
              {
 
@@ -105,7 +88,6 @@ namespace BIS345_Week4_Exercise6_WeightCon
             InitializeComponent();
         }
 
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -113,17 +95,27 @@ namespace BIS345_Week4_Exercise6_WeightCon
 
         private void ConvertButton_Click(object sender, EventArgs e)
         {
-            PoundsToKiloGrams myObj = new PoundsToKiloGrams();
-            myObj.TestMethod();
 
 
+            double UserPoundValueInput = double.Parse(UserPoundValueEnterTextBox.Text);
 
-            //(ITEM -1) We need to find a way to convert this INT into a String so we can attach
-            //it to one of the Text Labels
-            KiloGramsTextBox.Text = myObj.TestMathMethod(66,6);
+
+            PoundsToKiloGrams KiloGramObject = new PoundsToKiloGrams();
+
+
+            KiloGramsTextBox.Text = KiloGramObject.PoundsToKilogramsMethod(UserPoundValueInput);
             
 
 
+        }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            //(Button - 2 Clear Button) = This Clears All Of The Text Boxes **//
+            UserPoundValueEnterTextBox.Text = String.Empty;
+            KiloGramsTextBox.Text = String.Empty;
+            OuncesTextBox.Text = String.Empty;
+            GramsTextBox.Text = String.Empty;
 
         }
     }
