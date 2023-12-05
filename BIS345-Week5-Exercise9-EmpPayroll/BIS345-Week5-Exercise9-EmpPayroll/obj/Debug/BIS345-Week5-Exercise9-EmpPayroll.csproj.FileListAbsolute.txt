@@ -1,0 +1,10 @@
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 5\BIS345-Week5-Exercise9-EmpPayroll\BIS345-Week5-Exercise9-EmpPayroll\bin\Debug\BIS345-Week5-Exercise9-EmpPayroll.exe.config
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 5\BIS345-Week5-Exercise9-EmpPayroll\BIS345-Week5-Exercise9-EmpPayroll\bin\Debug\BIS345-Week5-Exercise9-EmpPayroll.exe
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 5\BIS345-Week5-Exercise9-EmpPayroll\BIS345-Week5-Exercise9-EmpPayroll\bin\Debug\BIS345-Week5-Exercise9-EmpPayroll.pdb
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 5\BIS345-Week5-Exercise9-EmpPayroll\BIS345-Week5-Exercise9-EmpPayroll\obj\Debug\BIS345-Week5-Exercise9-EmpPayroll.csprojAssemblyReference.cache
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 5\BIS345-Week5-Exercise9-EmpPayroll\BIS345-Week5-Exercise9-EmpPayroll\obj\Debug\BIS345_Week5_Exercise9_EmpPayroll.Form1.resources
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 5\BIS345-Week5-Exercise9-EmpPayroll\BIS345-Week5-Exercise9-EmpPayroll\obj\Debug\BIS345_Week5_Exercise9_EmpPayroll.Properties.Resources.resources
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 5\BIS345-Week5-Exercise9-EmpPayroll\BIS345-Week5-Exercise9-EmpPayroll\obj\Debug\BIS345-Week5-Exercise9-EmpPayroll.csproj.GenerateResource.cache
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 5\BIS345-Week5-Exercise9-EmpPayroll\BIS345-Week5-Exercise9-EmpPayroll\obj\Debug\BIS345-Week5-Exercise9-EmpPayroll.csproj.CoreCompileInputs.cache
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 5\BIS345-Week5-Exercise9-EmpPayroll\BIS345-Week5-Exercise9-EmpPayroll\obj\Debug\BIS345-Week5-Exercise9-EmpPayroll.exe
+C:\Users\resemoney\Documents\BIS 345 - Adcanced Application Development\Week 5\BIS345-Week5-Exercise9-EmpPayroll\BIS345-Week5-Exercise9-EmpPayroll\obj\Debug\BIS345-Week5-Exercise9-EmpPayroll.pdb
