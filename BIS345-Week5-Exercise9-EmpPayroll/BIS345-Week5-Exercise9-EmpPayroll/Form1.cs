@@ -35,33 +35,45 @@ namespace BIS345_Week5_Exercise9_EmpPayroll
 
             //(Code Block - 1)
 
-            EmployeeFullNameEnter = EnterFullNameTextBox.Text;
-            EmployeeIDEnter = EnterEmployeeIDTextBox.Text;
-            EmployeePayRateEnter = double.Parse(EnterPayrateTextbox.Text);
-            EmployeeHoursWorkedEnter = double.Parse(EnterHoursWorkedTextbox.Text);
-
-            if (EmployeePayRateEnter >= 50){
-
-                MessageBox.Show("Please Enter A Rate Below $50");
-                EnterPayrateTextbox.Text = String.Empty;
-
-            }
-
-            if (EmployeeHoursWorkedEnter >= 60)
+            try
             {
 
-                MessageBox.Show("Please Contact Your Manager If You Have Worked Over 60 Hours Or More");
-                EnterHoursWorkedTextbox.Text = String.Empty;
+                EmployeeFullNameEnter = EnterFullNameTextBox.Text;
+                EmployeeIDEnter = EnterEmployeeIDTextBox.Text;
+                EmployeePayRateEnter = double.Parse(EnterPayrateTextbox.Text);
+                EmployeeHoursWorkedEnter = double.Parse(EnterHoursWorkedTextbox.Text);
+
+                if (EmployeePayRateEnter >= 50)
+                {
+
+                    MessageBox.Show("Please Enter A Rate Below $50");
+                    EnterPayrateTextbox.Text = String.Empty;
+
+                }
+
+                if (EmployeeHoursWorkedEnter >= 60)
+                {
+
+                    MessageBox.Show("Please Contact Your Manager If You Have Worked Over 60 Hours Or More");
+                    EnterHoursWorkedTextbox.Text = String.Empty;
+
+                }
+                //System.FormatException: 
 
             }
 
+            catch (System.FormatException)
+            {
 
+                MessageBox.Show("You Did Not Enter A Number Value, Please Try Again");
+
+            }
 
         }
 
         private void PayRollExportSectionButton_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void PayRollCalculationClearButton_Click(object sender, EventArgs e)
@@ -70,6 +82,11 @@ namespace BIS345_Week5_Exercise9_EmpPayroll
             EnterEmployeeIDTextBox.Text = String.Empty;
             EnterPayrateTextbox.Text = String.Empty;
             EnterHoursWorkedTextbox.Text = String.Empty;
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }

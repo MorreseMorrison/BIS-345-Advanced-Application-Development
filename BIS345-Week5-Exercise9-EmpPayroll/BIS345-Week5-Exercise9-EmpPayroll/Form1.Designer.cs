@@ -48,6 +48,10 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.TotalPayTextBox = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -65,7 +69,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(45, 165);
+            this.label1.Location = new System.Drawing.Point(45, 93);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(363, 33);
             this.label1.TabIndex = 1;
@@ -74,7 +78,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 256);
+            this.label2.Location = new System.Drawing.Point(41, 172);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(172, 25);
             this.label2.TabIndex = 2;
@@ -83,16 +87,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(41, 334);
+            this.label3.Location = new System.Drawing.Point(36, 277);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(196, 25);
+            this.label3.Size = new System.Drawing.Size(281, 25);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Enter Employee ID:";
+            this.label3.Text = "Enter Six Digit Employee ID:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 409);
+            this.label4.Location = new System.Drawing.Point(41, 392);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(149, 25);
             this.label4.TabIndex = 4;
@@ -101,7 +105,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(46, 487);
+            this.label5.Location = new System.Drawing.Point(41, 513);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(321, 25);
             this.label5.TabIndex = 5;
@@ -109,7 +113,7 @@
             // 
             // PayRollCalculationSectionButton
             // 
-            this.PayRollCalculationSectionButton.Location = new System.Drawing.Point(181, 576);
+            this.PayRollCalculationSectionButton.Location = new System.Drawing.Point(189, 655);
             this.PayRollCalculationSectionButton.Name = "PayRollCalculationSectionButton";
             this.PayRollCalculationSectionButton.Size = new System.Drawing.Size(186, 56);
             this.PayRollCalculationSectionButton.TabIndex = 6;
@@ -120,7 +124,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(46, 722);
+            this.label6.Location = new System.Drawing.Point(46, 753);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(109, 25);
             this.label6.TabIndex = 7;
@@ -128,7 +132,7 @@
             // 
             // PayRollExportSectionButton
             // 
-            this.PayRollExportSectionButton.Location = new System.Drawing.Point(46, 809);
+            this.PayRollExportSectionButton.Location = new System.Drawing.Point(46, 818);
             this.PayRollExportSectionButton.Name = "PayRollExportSectionButton";
             this.PayRollExportSectionButton.Size = new System.Drawing.Size(186, 56);
             this.PayRollExportSectionButton.TabIndex = 8;
@@ -138,7 +142,7 @@
             // 
             // PayRollCalculationClearButton
             // 
-            this.PayRollCalculationClearButton.Location = new System.Drawing.Point(282, 809);
+            this.PayRollCalculationClearButton.Location = new System.Drawing.Point(283, 818);
             this.PayRollCalculationClearButton.Name = "PayRollCalculationClearButton";
             this.PayRollCalculationClearButton.Size = new System.Drawing.Size(186, 56);
             this.PayRollCalculationClearButton.TabIndex = 9;
@@ -148,7 +152,7 @@
             // 
             // EnterFullNameTextBox
             // 
-            this.EnterFullNameTextBox.Location = new System.Drawing.Point(219, 256);
+            this.EnterFullNameTextBox.Location = new System.Drawing.Point(219, 165);
             this.EnterFullNameTextBox.MaxLength = 35;
             this.EnterFullNameTextBox.Name = "EnterFullNameTextBox";
             this.EnterFullNameTextBox.Size = new System.Drawing.Size(179, 31);
@@ -156,23 +160,24 @@
             // 
             // EnterEmployeeIDTextBox
             // 
-            this.EnterEmployeeIDTextBox.Location = new System.Drawing.Point(243, 328);
+            this.EnterEmployeeIDTextBox.Location = new System.Drawing.Point(323, 277);
             this.EnterEmployeeIDTextBox.MaxLength = 6;
+            this.EnterEmployeeIDTextBox.MinimumSize = new System.Drawing.Size(6, 6);
             this.EnterEmployeeIDTextBox.Name = "EnterEmployeeIDTextBox";
             this.EnterEmployeeIDTextBox.Size = new System.Drawing.Size(179, 31);
             this.EnterEmployeeIDTextBox.TabIndex = 11;
             // 
             // EnterPayrateTextbox
             // 
-            this.EnterPayrateTextbox.Location = new System.Drawing.Point(196, 409);
-            this.EnterPayrateTextbox.MaxLength = 5;
+            this.EnterPayrateTextbox.Location = new System.Drawing.Point(196, 392);
+            this.EnterPayrateTextbox.MaxLength = 2;
             this.EnterPayrateTextbox.Name = "EnterPayrateTextbox";
             this.EnterPayrateTextbox.Size = new System.Drawing.Size(179, 31);
             this.EnterPayrateTextbox.TabIndex = 12;
             // 
             // EnterHoursWorkedTextbox
             // 
-            this.EnterHoursWorkedTextbox.Location = new System.Drawing.Point(383, 487);
+            this.EnterHoursWorkedTextbox.Location = new System.Drawing.Point(368, 507);
             this.EnterHoursWorkedTextbox.MaxLength = 5;
             this.EnterHoursWorkedTextbox.Name = "EnterHoursWorkedTextbox";
             this.EnterHoursWorkedTextbox.Size = new System.Drawing.Size(179, 31);
@@ -217,11 +222,47 @@
             // 
             // TotalPayTextBox
             // 
-            this.TotalPayTextBox.Location = new System.Drawing.Point(161, 716);
+            this.TotalPayTextBox.Location = new System.Drawing.Point(183, 747);
             this.TotalPayTextBox.Name = "TotalPayTextBox";
             this.TotalPayTextBox.ReadOnly = true;
             this.TotalPayTextBox.Size = new System.Drawing.Size(179, 31);
             this.TotalPayTextBox.TabIndex = 18;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(41, 215);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(199, 25);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Example: Jane Doe";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(36, 320);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(179, 25);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Example: 111112";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(41, 439);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(161, 25);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Example: 20.00";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(41, 553);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(161, 25);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Example: 40.00";
             // 
             // Form1
             // 
@@ -231,6 +272,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1542, 900);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.TotalPayTextBox);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -253,6 +298,7 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "Form1";
             this.Text = "Peirce College Hourly Payroll Application";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,6 +325,10 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TextBox TotalPayTextBox;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }
 
