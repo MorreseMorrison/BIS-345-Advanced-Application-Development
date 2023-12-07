@@ -134,10 +134,10 @@ namespace BIS345_Week5_Exercise9_EmpPayroll
                    //PART 2//
                    //**START Export File Logic** = Sends The Text File To The Users Public Documents Utilizes The File.WriteAllText Method**\\
 
-                    File.WriteAllText(@"C:\Users\Public\Documents\PeirceCollegePayrollExportTimeHalfPay.txt", "PEIRCE COLLEGE HOURLY PAYROLL EXPORT" + "\n" +
-                       "\n" + "Full Name: " + EmployeeFullNameEnter + "\n" + "Total Gross Pay: " + "$" + DisplayTimeAndAHalfTotalPay + "\n" + "Employee ID: " +
-                        EmployeeIDEnter + "\n" + "Payrate: " + "$" + EmployeePayRateEnter + "\n" + "Hours Worked: " + EmployeeHoursWorkedEnter 
-                        + "\n" + "Pay Type: Time & Half Pay Rate");
+                    File.WriteAllText(@"C:\Users\Public\Documents\PeirceCollegePayrollExportTimeHalfPay.txt", "**PEIRCE COLLEGE HOURLY PAYROLL EXPORT**" + "\n" +
+                       "\n" + " Full Name: " + EmployeeFullNameEnter + "\n" + " Total Gross Pay: " + "$" + DisplayTimeAndAHalfTotalPay + "\n" + " Employee ID: " +
+                        EmployeeIDEnter + "\n" + " Payrate: " + "$" + EmployeePayRateEnter + "\n" + " Hours Worked: " + EmployeeHoursWorkedEnter 
+                        + "\n" + " Pay Type: Time & Half Pay Rate");
 
                     //Message Box Telling The User To Check Their Public Documents Folder For The Export File
 
@@ -196,20 +196,40 @@ namespace BIS345_Week5_Exercise9_EmpPayroll
 
                 string file = openFileDialog1.FileName;
 
-                string str = File.ReadAllText(file);
+              //  string[] lines = File.ReadAllLines(file);
+
+            //    foreach (var item in lines)
+           //     {
+            //        PayrollImportSectionTextBox.Text = (item.ToString());
+           //     }
+
+                // foreach (string ln in lines)
+
+                // MessageBox.Show(lines);
+
+                //
 
 
-                PayrollImportSectionTextBox.Text = (str);
-               // MessageBox.Show(str);
+
+                //    PayrollImportSectionTextBox.Text = (lines);
+
+
+
+
+                   string str = File.ReadAllText(file);
+
+
+                  PayrollImportSectionTextBox.Text = (str);
+                // MessageBox.Show(str);
             }
 
 
 
 
-           // openFileDialog1.ShowDialog();
+            // openFileDialog1.ShowDialog();
 
 
-          //  openFileDialog1.InitialDirectory = @"C:\";
+            //  openFileDialog1.InitialDirectory = @"C:\";
 
             // OpenFileDialog openFileDialog1 = new OpenFileDialog();
 
