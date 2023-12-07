@@ -44,7 +44,7 @@
             this.EnterHoursWorkedTextbox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.PayrollImportSectionTextBox = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.PayRollImportSectionImportButton = new System.Windows.Forms.Button();
             this.PayrollImportSectionClearButton = new System.Windows.Forms.Button();
             this.TotalPayTextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -194,15 +194,15 @@
             this.PayrollImportSectionTextBox.Size = new System.Drawing.Size(826, 420);
             this.PayrollImportSectionTextBox.TabIndex = 15;
             // 
-            // button4
+            // PayRollImportSectionImportButton
             // 
-            this.button4.Location = new System.Drawing.Point(1061, 619);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(186, 56);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Import";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.PayRollImportSectionImportButton.Location = new System.Drawing.Point(1061, 619);
+            this.PayRollImportSectionImportButton.Name = "PayRollImportSectionImportButton";
+            this.PayRollImportSectionImportButton.Size = new System.Drawing.Size(186, 56);
+            this.PayRollImportSectionImportButton.TabIndex = 16;
+            this.PayRollImportSectionImportButton.Text = "Import";
+            this.PayRollImportSectionImportButton.UseVisualStyleBackColor = true;
+            this.PayRollImportSectionImportButton.Click += new System.EventHandler(this.button4_Click);
             // 
             // PayrollImportSectionClearButton
             // 
@@ -302,7 +302,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.TotalPayTextBox);
             this.Controls.Add(this.PayrollImportSectionClearButton);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.PayRollImportSectionImportButton);
             this.Controls.Add(this.PayrollImportSectionTextBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.EnterHoursWorkedTextbox);
@@ -344,7 +344,7 @@
         private System.Windows.Forms.TextBox EnterHoursWorkedTextbox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox PayrollImportSectionTextBox;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button PayRollImportSectionImportButton;
         private System.Windows.Forms.Button PayrollImportSectionClearButton;
         private System.Windows.Forms.TextBox TotalPayTextBox;
         private System.Windows.Forms.Label label8;

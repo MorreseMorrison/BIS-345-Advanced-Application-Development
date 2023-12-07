@@ -22,7 +22,6 @@ namespace BIS345_Week5_Exercise9_EmpPayroll
         //(Part - 1 - PAYROLL CALCULATION SECTION - START)
         private void PayRollCalculationSectionButton_Click(object sender, EventArgs e)
         {
-            //**MAIN LOGIC**\\
 
 
             //VARIABLES
@@ -32,10 +31,8 @@ namespace BIS345_Week5_Exercise9_EmpPayroll
             double EmployeeHoursWorkedEnter;
 
 
-            //**PROGRAM START**//
 
-
-            //**PAYROLL CALCULATION SECTION START**\\
+           //**PAYROLL CALCULATION SECTION START**\\
 
             try
             {
@@ -183,64 +180,33 @@ namespace BIS345_Week5_Exercise9_EmpPayroll
 
         }
 
+        //(Part - 2 - PAYROLL IMPORT SECTION - START)
         private void button4_Click(object sender, EventArgs e)
         {
 
+            //When Clicking The Import Button, The Open File Dialog Will Appear
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
 
+            //When The File Dialog Appears, Only TXT Files Will Be Selectable
             openFileDialog1.Filter = "TXT files|*.txt";
 
+            //
             if(openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 ImportFilePathTextBox.Text = openFileDialog1.FileName;
 
                 string file = openFileDialog1.FileName;
 
-              //  string[] lines = File.ReadAllLines(file);
+                string str = File.ReadAllText(file);
 
-            //    foreach (var item in lines)
-           //     {
-            //        PayrollImportSectionTextBox.Text = (item.ToString());
-           //     }
-
-                // foreach (string ln in lines)
-
-                // MessageBox.Show(lines);
-
-                //
-
-
-
-                //    PayrollImportSectionTextBox.Text = (lines);
-
-
-
-
-                   string str = File.ReadAllText(file);
-
-
-                  PayrollImportSectionTextBox.Text = (str);
-                // MessageBox.Show(str);
+                PayrollImportSectionTextBox.Text = (str);
+                
             }
 
 
-
-
-            // openFileDialog1.ShowDialog();
-
-
-            //  openFileDialog1.InitialDirectory = @"C:\";
-
-            // OpenFileDialog openFileDialog1 = new OpenFileDialog();
-
-            // openFileDialog1.ShowDialog();
-
-            //
-            // string readText = File.ReadAllText(@"C:\Users\Public\Documents\PeirceCollegePayrollExportTimeHalfPay.txt");
-            // Console.WriteLine(readText);
-
-
         }
+        //(Part - 2 - PAYROLL IMPORT SECTION - END)
+
 
         //**Payroll Import Section Clear Button**\\
         private void button5_Click(object sender, EventArgs e)
