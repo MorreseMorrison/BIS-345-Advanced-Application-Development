@@ -51,7 +51,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ImportFilePathTextBox = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.PayTypeTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -187,16 +187,16 @@
             // 
             // PayrollImportSectionTextBox
             // 
-            this.PayrollImportSectionTextBox.Location = new System.Drawing.Point(1114, 165);
+            this.PayrollImportSectionTextBox.Location = new System.Drawing.Point(1061, 169);
             this.PayrollImportSectionTextBox.Multiline = true;
             this.PayrollImportSectionTextBox.Name = "PayrollImportSectionTextBox";
             this.PayrollImportSectionTextBox.ReadOnly = true;
-            this.PayrollImportSectionTextBox.Size = new System.Drawing.Size(586, 420);
+            this.PayrollImportSectionTextBox.Size = new System.Drawing.Size(826, 420);
             this.PayrollImportSectionTextBox.TabIndex = 15;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(1114, 656);
+            this.button4.Location = new System.Drawing.Point(1061, 619);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(186, 56);
             this.button4.TabIndex = 16;
@@ -206,7 +206,7 @@
             // 
             // PayrollImportSectionClearButton
             // 
-            this.PayrollImportSectionClearButton.Location = new System.Drawing.Point(1114, 747);
+            this.PayrollImportSectionClearButton.Location = new System.Drawing.Point(1061, 692);
             this.PayrollImportSectionClearButton.Name = "PayrollImportSectionClearButton";
             this.PayrollImportSectionClearButton.Size = new System.Drawing.Size(186, 56);
             this.PayrollImportSectionClearButton.TabIndex = 17;
@@ -258,13 +258,13 @@
             this.label11.TabIndex = 22;
             this.label11.Text = "Example: 40 (Only Numbers)";
             // 
-            // textBox2
+            // ImportFilePathTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(1311, 656);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(389, 31);
-            this.textBox2.TabIndex = 23;
+            this.ImportFilePathTextBox.Location = new System.Drawing.Point(1253, 619);
+            this.ImportFilePathTextBox.Name = "ImportFilePathTextBox";
+            this.ImportFilePathTextBox.ReadOnly = true;
+            this.ImportFilePathTextBox.Size = new System.Drawing.Size(634, 31);
+            this.ImportFilePathTextBox.TabIndex = 23;
             // 
             // label12
             // 
@@ -292,10 +292,10 @@
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1769, 900);
+            this.ClientSize = new System.Drawing.Size(1950, 900);
             this.Controls.Add(this.PayTypeTextBox);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.ImportFilePathTextBox);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -351,7 +351,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox ImportFilePathTextBox;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox PayTypeTextBox;
     }

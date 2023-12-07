@@ -19,7 +19,7 @@ namespace BIS345_Week5_Exercise9_EmpPayroll
         }
 
 
-        //(Part - 1 - PAYROLL CALCULATION SECTION)
+        //(Part - 1 - PAYROLL CALCULATION SECTION - START)
         private void PayRollCalculationSectionButton_Click(object sender, EventArgs e)
         {
             //**MAIN LOGIC**\\
@@ -161,6 +161,7 @@ namespace BIS345_Week5_Exercise9_EmpPayroll
             //**PAYROLL CALCULATION SECTION END**\\
 
         }
+        //(Part - 1 - PAYROLL CALCULATION SECTION - END)
 
         private void PayRollExportSectionButton_Click(object sender, EventArgs e)
         {
@@ -182,17 +183,33 @@ namespace BIS345_Week5_Exercise9_EmpPayroll
 
         }
 
-
-
         private void button4_Click(object sender, EventArgs e)
         {
 
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
 
-            openFileDialog1.ShowDialog();
+            openFileDialog1.Filter = "TXT files|*.txt";
+
+            if(openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                ImportFilePathTextBox.Text = openFileDialog1.FileName;
+
+                string file = openFileDialog1.FileName;
+
+                string str = File.ReadAllText(file);
 
 
-            openFileDialog1.InitialDirectory = @"C:\";
+                PayrollImportSectionTextBox.Text = (str);
+               // MessageBox.Show(str);
+            }
+
+
+
+
+           // openFileDialog1.ShowDialog();
+
+
+          //  openFileDialog1.InitialDirectory = @"C:\";
 
             // OpenFileDialog openFileDialog1 = new OpenFileDialog();
 
@@ -205,11 +222,11 @@ namespace BIS345_Week5_Exercise9_EmpPayroll
 
         }
 
-
         //**Payroll Import Section Clear Button**\\
         private void button5_Click(object sender, EventArgs e)
         {
-            //PayrollImportSectionTextBox.Text = String.Empty;
+            PayrollImportSectionTextBox.Text = String.Empty;
+            ImportFilePathTextBox.Text = String.Empty;
 
         }
 
