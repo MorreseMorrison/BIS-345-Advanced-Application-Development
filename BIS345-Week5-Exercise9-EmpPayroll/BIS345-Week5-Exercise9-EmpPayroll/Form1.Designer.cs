@@ -37,7 +37,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.PayRollCalculationSectionButton = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.PayRollExportSectionButton = new System.Windows.Forms.Button();
             this.PayRollCalculationClearButton = new System.Windows.Forms.Button();
             this.EnterFullNameTextBox = new System.Windows.Forms.TextBox();
             this.EnterEmployeeIDTextBox = new System.Windows.Forms.TextBox();
@@ -52,6 +51,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -113,11 +113,11 @@
             // 
             // PayRollCalculationSectionButton
             // 
-            this.PayRollCalculationSectionButton.Location = new System.Drawing.Point(189, 655);
+            this.PayRollCalculationSectionButton.Location = new System.Drawing.Point(41, 630);
             this.PayRollCalculationSectionButton.Name = "PayRollCalculationSectionButton";
-            this.PayRollCalculationSectionButton.Size = new System.Drawing.Size(186, 56);
+            this.PayRollCalculationSectionButton.Size = new System.Drawing.Size(236, 56);
             this.PayRollCalculationSectionButton.TabIndex = 6;
-            this.PayRollCalculationSectionButton.Text = "Calculate";
+            this.PayRollCalculationSectionButton.Text = "Calculate And Export";
             this.PayRollCalculationSectionButton.UseVisualStyleBackColor = true;
             this.PayRollCalculationSectionButton.Click += new System.EventHandler(this.PayRollCalculationSectionButton_Click);
             // 
@@ -126,25 +126,15 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(46, 753);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(109, 25);
+            this.label6.Size = new System.Drawing.Size(186, 25);
             this.label6.TabIndex = 7;
-            this.label6.Text = "Total Pay:";
-            // 
-            // PayRollExportSectionButton
-            // 
-            this.PayRollExportSectionButton.Location = new System.Drawing.Point(46, 818);
-            this.PayRollExportSectionButton.Name = "PayRollExportSectionButton";
-            this.PayRollExportSectionButton.Size = new System.Drawing.Size(186, 56);
-            this.PayRollExportSectionButton.TabIndex = 8;
-            this.PayRollExportSectionButton.Text = "Export";
-            this.PayRollExportSectionButton.UseVisualStyleBackColor = true;
-            this.PayRollExportSectionButton.Click += new System.EventHandler(this.PayRollExportSectionButton_Click);
+            this.label6.Text = "Total Pay (Gross):";
             // 
             // PayRollCalculationClearButton
             // 
-            this.PayRollCalculationClearButton.Location = new System.Drawing.Point(283, 818);
+            this.PayRollCalculationClearButton.Location = new System.Drawing.Point(311, 630);
             this.PayRollCalculationClearButton.Name = "PayRollCalculationClearButton";
-            this.PayRollCalculationClearButton.Size = new System.Drawing.Size(186, 56);
+            this.PayRollCalculationClearButton.Size = new System.Drawing.Size(236, 56);
             this.PayRollCalculationClearButton.TabIndex = 9;
             this.PayRollCalculationClearButton.Text = "Clear";
             this.PayRollCalculationClearButton.UseVisualStyleBackColor = true;
@@ -210,10 +200,11 @@
             this.button4.TabIndex = 16;
             this.button4.Text = "Import";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(1277, 722);
+            this.button5.Location = new System.Drawing.Point(990, 818);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(186, 56);
             this.button5.TabIndex = 17;
@@ -222,10 +213,10 @@
             // 
             // TotalPayTextBox
             // 
-            this.TotalPayTextBox.Location = new System.Drawing.Point(183, 747);
+            this.TotalPayTextBox.Location = new System.Drawing.Point(238, 750);
             this.TotalPayTextBox.Name = "TotalPayTextBox";
             this.TotalPayTextBox.ReadOnly = true;
-            this.TotalPayTextBox.Size = new System.Drawing.Size(179, 31);
+            this.TotalPayTextBox.Size = new System.Drawing.Size(309, 31);
             this.TotalPayTextBox.TabIndex = 18;
             // 
             // label8
@@ -233,36 +224,44 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(41, 215);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(199, 25);
+            this.label8.Size = new System.Drawing.Size(335, 25);
             this.label8.TabIndex = 19;
-            this.label8.Text = "Example: Jane Doe";
+            this.label8.Text = "Example: Jane Doe (Only Letters)";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(36, 320);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(179, 25);
+            this.label9.Size = new System.Drawing.Size(335, 25);
             this.label9.TabIndex = 20;
-            this.label9.Text = "Example: 111112";
+            this.label9.Text = "Example: 111112 (Only Numbers)";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(41, 439);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(161, 25);
+            this.label10.Size = new System.Drawing.Size(287, 25);
             this.label10.TabIndex = 21;
-            this.label10.Text = "Example: 20.00";
+            this.label10.Text = "Example: 20 (Only Numbers)";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(41, 553);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(161, 25);
+            this.label11.Size = new System.Drawing.Size(287, 25);
             this.label11.TabIndex = 22;
-            this.label11.Text = "Example: 40.00";
+            this.label11.Text = "Example: 40 (Only Numbers)";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(1214, 735);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(389, 31);
+            this.textBox2.TabIndex = 23;
             // 
             // Form1
             // 
@@ -271,7 +270,8 @@
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1542, 900);
+            this.ClientSize = new System.Drawing.Size(1624, 900);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -286,7 +286,6 @@
             this.Controls.Add(this.EnterEmployeeIDTextBox);
             this.Controls.Add(this.EnterFullNameTextBox);
             this.Controls.Add(this.PayRollCalculationClearButton);
-            this.Controls.Add(this.PayRollExportSectionButton);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.PayRollCalculationSectionButton);
             this.Controls.Add(this.label5);
@@ -314,7 +313,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button PayRollCalculationSectionButton;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button PayRollExportSectionButton;
         private System.Windows.Forms.Button PayRollCalculationClearButton;
         private System.Windows.Forms.TextBox EnterFullNameTextBox;
         private System.Windows.Forms.TextBox EnterEmployeeIDTextBox;
@@ -329,6 +327,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 
