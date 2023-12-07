@@ -59,6 +59,8 @@ namespace BIS345_Week5_Exercise9_EmpPayroll
 
                 }
 
+                //(Code Block - 2.2)\\
+
                 //**IF STATEMENT**\\ If The Hours Worked Entered Is Greater Than or Equal To 60, Print Error Message & Clear EnterHoursWorkedTextbox
                 if (EmployeeHoursWorkedEnter >= 60)
                 {
@@ -70,7 +72,7 @@ namespace BIS345_Week5_Exercise9_EmpPayroll
 
 
 
-                //(Code Block - 2.2)\\
+                //(Code Block - 2.3)\\
 
                 //**IF STATEMENT**\\ If The Hours Worked Entered Is Less Than or Equal To 40, Run Regular Total Pay Calculation Then Print Total To TotalPayTextBox
                 if (EmployeeHoursWorkedEnter <= 40)
@@ -85,6 +87,8 @@ namespace BIS345_Week5_Exercise9_EmpPayroll
                     
                 }
 
+                //(Code Block - 2.4)\\
+
                 //**ELSE**\\ Else Run Time And A Half Calculation Then Print To  TotalPayTextBox
                 else
                 {
@@ -95,12 +99,24 @@ namespace BIS345_Week5_Exercise9_EmpPayroll
 
                    String DisplayTimeAndAHalfTotalPay = Convert.ToString(TimeAndAHalfTotalPay);
 
-                   TotalPayTextBox.Text = String.Format("$" + DisplayTimeAndAHalfTotalPay + " (Time & Half Pay Rate)");
+                   TotalPayTextBox.Text = String.Format("$" + DisplayTimeAndAHalfTotalPay);
 
-                   // OpenFileDialog openFileDialog1 = new OpenFileDialog();
+                   PayTypeTextBox.Text = ("Time & Half Pay Rate");
 
-                   // openFileDialog1.ShowDialog();
 
+                    // OpenFileDialog openFileDialog1 = new OpenFileDialog();
+
+                    // openFileDialog1.ShowDialog();
+
+                    
+
+
+
+                    File.WriteAllText(@"C:\Users\Public\Documents\PeirceCollegePayrollExport.txt", EmployeeFullNameEnter + "$" + DisplayTimeAndAHalfTotalPay);
+                    string readText = File.ReadAllText(@"C:\Users\Public\Documents\PeirceCollegePayrollExport.txt");
+                    Console.WriteLine(readText);
+
+                    MessageBox.Show("Please Check Your Public Documents Folder For Your Export" + "\n" + "Example: C:/Users/Public/Documents/PeirceCollegePayrollExport.txt");
 
 
                 }
@@ -110,7 +126,7 @@ namespace BIS345_Week5_Exercise9_EmpPayroll
             catch (System.FormatException)
             {
 
-                MessageBox.Show("You Did Not Enter A Number Value, Please Try Again");
+                MessageBox.Show("You Did Not Enter A Number Value, Please Try Again"); 
 
             }
 
@@ -138,6 +154,8 @@ namespace BIS345_Week5_Exercise9_EmpPayroll
 
         }
 
+
+
         private void button4_Click(object sender, EventArgs e)
         {
 
@@ -147,6 +165,19 @@ namespace BIS345_Week5_Exercise9_EmpPayroll
 
 
             openFileDialog1.InitialDirectory = @"C:\";
+
+        }
+
+
+        //**Payroll Import Section Clear Button**\\
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //PayrollImportSectionTextBox.Text = String.Empty;
+
+        }
+
+        private void PayTypeTextBox_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

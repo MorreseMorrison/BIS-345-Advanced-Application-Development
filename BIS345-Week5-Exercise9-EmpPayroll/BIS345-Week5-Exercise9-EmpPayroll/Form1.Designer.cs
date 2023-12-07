@@ -43,15 +43,17 @@
             this.EnterPayrateTextbox = new System.Windows.Forms.TextBox();
             this.EnterHoursWorkedTextbox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.PayrollImportSectionTextBox = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.PayrollImportSectionClearButton = new System.Windows.Forms.Button();
             this.TotalPayTextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.PayTypeTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -177,24 +179,24 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1071, 165);
+            this.label7.Location = new System.Drawing.Point(1108, 93);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(301, 33);
             this.label7.TabIndex = 14;
             this.label7.Text = "Payroll Import Section";
             // 
-            // textBox6
+            // PayrollImportSectionTextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(990, 255);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(473, 340);
-            this.textBox6.TabIndex = 15;
+            this.PayrollImportSectionTextBox.Location = new System.Drawing.Point(1114, 165);
+            this.PayrollImportSectionTextBox.Multiline = true;
+            this.PayrollImportSectionTextBox.Name = "PayrollImportSectionTextBox";
+            this.PayrollImportSectionTextBox.ReadOnly = true;
+            this.PayrollImportSectionTextBox.Size = new System.Drawing.Size(586, 420);
+            this.PayrollImportSectionTextBox.TabIndex = 15;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(990, 722);
+            this.button4.Location = new System.Drawing.Point(1114, 656);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(186, 56);
             this.button4.TabIndex = 16;
@@ -202,21 +204,22 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // PayrollImportSectionClearButton
             // 
-            this.button5.Location = new System.Drawing.Point(990, 818);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(186, 56);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "Clear";
-            this.button5.UseVisualStyleBackColor = true;
+            this.PayrollImportSectionClearButton.Location = new System.Drawing.Point(1114, 747);
+            this.PayrollImportSectionClearButton.Name = "PayrollImportSectionClearButton";
+            this.PayrollImportSectionClearButton.Size = new System.Drawing.Size(186, 56);
+            this.PayrollImportSectionClearButton.TabIndex = 17;
+            this.PayrollImportSectionClearButton.Text = "Clear";
+            this.PayrollImportSectionClearButton.UseVisualStyleBackColor = true;
+            this.PayrollImportSectionClearButton.Click += new System.EventHandler(this.button5_Click);
             // 
             // TotalPayTextBox
             // 
-            this.TotalPayTextBox.Location = new System.Drawing.Point(238, 750);
+            this.TotalPayTextBox.Location = new System.Drawing.Point(238, 747);
             this.TotalPayTextBox.Name = "TotalPayTextBox";
             this.TotalPayTextBox.ReadOnly = true;
-            this.TotalPayTextBox.Size = new System.Drawing.Size(309, 31);
+            this.TotalPayTextBox.Size = new System.Drawing.Size(179, 31);
             this.TotalPayTextBox.TabIndex = 18;
             // 
             // label8
@@ -257,11 +260,30 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(1214, 735);
+            this.textBox2.Location = new System.Drawing.Point(1311, 656);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(389, 31);
             this.textBox2.TabIndex = 23;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(51, 818);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(109, 25);
+            this.label12.TabIndex = 24;
+            this.label12.Text = "Pay Type:";
+            // 
+            // PayTypeTextBox
+            // 
+            this.PayTypeTextBox.Location = new System.Drawing.Point(166, 812);
+            this.PayTypeTextBox.Multiline = true;
+            this.PayTypeTextBox.Name = "PayTypeTextBox";
+            this.PayTypeTextBox.ReadOnly = true;
+            this.PayTypeTextBox.Size = new System.Drawing.Size(251, 31);
+            this.PayTypeTextBox.TabIndex = 25;
+            this.PayTypeTextBox.TextChanged += new System.EventHandler(this.PayTypeTextBox_TextChanged);
             // 
             // Form1
             // 
@@ -270,16 +292,18 @@
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1624, 900);
+            this.ClientSize = new System.Drawing.Size(1769, 900);
+            this.Controls.Add(this.PayTypeTextBox);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.TotalPayTextBox);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.PayrollImportSectionClearButton);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.PayrollImportSectionTextBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.EnterHoursWorkedTextbox);
             this.Controls.Add(this.EnterPayrateTextbox);
@@ -319,15 +343,17 @@
         private System.Windows.Forms.TextBox EnterPayrateTextbox;
         private System.Windows.Forms.TextBox EnterHoursWorkedTextbox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox PayrollImportSectionTextBox;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button PayrollImportSectionClearButton;
         private System.Windows.Forms.TextBox TotalPayTextBox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox PayTypeTextBox;
     }
 }
 
