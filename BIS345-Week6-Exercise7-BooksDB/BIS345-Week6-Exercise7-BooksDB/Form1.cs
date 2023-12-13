@@ -9,7 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
-
+//Name: Morrese Morrison
+//Date: 12/12/2023 6:38PM
+//Umiversity: Peirce College
+//Professor: Dr. Nathan Kilgore
+//Course: BIS345: Advanced Application Development
+//Program Purpose: This Program Loads Course Books Along with Their Title, ISBN Number And Associated Class Number. There Is One
+//Main Function, & Two Auxiliiary Functions. The Main Function Is The "Load Course Button". This Button Starts A Connection With Our
+//SQL Server Database, Executes The Query Given, Then Displays The Result On A Data Grid View. The Other Two Auiliary Functions Are The
+//"Test Database Connection Button" Which Tests If The Program Can Reach The Database. And The "Clear Grid Button" Which Clears The On Screen
+//Data Grid After The Query Results Are Shown. Exception Handling Is Utilized If The Program Can Not Reach The Database. Since The SQL Server
+//Is Local, An Exception Will Always Be Thrown Until The String Connection Is Set To A Cloud Database Solution.
 namespace BIS345_Week6_Exercise7_BooksDB
 {
     public partial class Form1 : Form
@@ -19,37 +29,51 @@ namespace BIS345_Week6_Exercise7_BooksDB
             InitializeComponent();
         }
 
-
-        //**(Code Block 1 - Load Course Books Button)**//
+        //**(Component 1 - Load Course Books Button)**//
         private void button1_Click(object sender, EventArgs e)
         {
 
             //**MAIN LOGIC**//
             //**START**//
 
-            //(Code Block 1 - START) - Establishing A Connection With The SQL Server Database
+           
 
-            //(Code Block 1.1) - SQL Connection String Intilization
-            String SQLConnectionString;
-
-
-            //(Code Block 1.2) - SQL Connection String Assigned Database Connection String Information
-            SQLConnectionString = "Data Source=MORRESEMORRDED3;Initial Catalog=BIS345;Integrated Security=True;MultipleActiveResultSets=True";
+                //(Code Block 1 - START) - Establishing A Connection With The SQL Server Database
+                //(Code Block 1.1) - SQL Connection String Intilization
+                String SQLConnectionString;
 
 
-            //(Code Block 1.3) - Create An Object Of Type SqlConnection Named "SQLConnectionObject", Fed SQLConnectionString As The Parameter
-            SqlConnection SQLConnectionObject = new SqlConnection(SQLConnectionString);
+                //(Code Block 1.2) - SQL Connection String Assigned Database Connection String Information
+                SQLConnectionString = "Data Source=MORRESEMORRDED3;Initial Catalog=BIS345;Integrated Security=True;MultipleActiveResultSets=True";
 
 
-            //(Code Block 1.4) - The Connection Method Is Utilized To Create Open The Connection With The SQL Server Database
-            SQLConnectionObject.Open();
+                //(Code Block 1.3) - Create An Object Of Type SqlConnection Named "SQLConnectionObject", Fed SQLConnectionString As The Parameter
+                SqlConnection SQLConnectionObject = new SqlConnection(SQLConnectionString);
 
 
-            //(Code Block 1 - END)//
+            //#EXCEPTION 1 START//
+             try
+                {
 
+                //(Code Block 1.4) - The Connection Method Is Utilized To Create Open The Connection With The SQL Server Database
+                SQLConnectionObject.Open();
+                //(Code Block 1 - END)//
+
+                            }
             
-            //**(Code Block 2 - START)**// - Executing The Desired Query & Displaying The Result Onto A Data Grid View
 
+            catch (System.Data.SqlClient.SqlException)
+                 {
+
+                MessageBox.Show("Error With Connecting To The Database, Please Contact Your System Administrator Before Starting The Application Again");
+                System.Windows.Forms.Application.Exit();
+
+                            }
+            //#EXCEPTION 1 END//
+
+
+
+            //**(Code Block 2 - START)**// - Executing The Desired Query & Displaying The Result Onto A Data Grid View
             //(Code Block 2.1). Inner Join Query Between Three Tables "BookTable", "CourseBookTable", "PeirceCollegeCourseCatalogTable
             //This Query Should Select All Books, Their Course Number, Title, ISBN And Course Name, Only Three Results Should Show
             string Sql_Query_1 = "SELECT  CourseBookTable.Course_Number, PeirceCollegeCourseCatalogTable.Course_Name, BookTable.Title, BookTable.ISBN" +
@@ -78,8 +102,28 @@ namespace BIS345_Week6_Exercise7_BooksDB
             DataTable = new DataTable();
 
 
-            //(Code Block 2.5) - Utilized Fill To Execute Our Query Against Our DataBase Into Our DataTable Variable
-            Adapter.Fill(DataTable);
+
+
+            //#EXCEPTION 2 START//
+            try
+            {
+
+                //(Code Block 2.5) - Utilized Fill To Execute Our Query Against Our DataBase Into Our DataTable Variable
+                Adapter.Fill(DataTable);
+
+                                    }
+
+           catch (System.Data.SqlClient.SqlException)
+            {
+
+                MessageBox.Show("Error With Connecting To The Database, Please Contact Your System Administrator Before Starting The Application Again");
+                System.Windows.Forms.Application.Exit();
+
+                                    }
+            //#EXCEPTION 2 END//
+
+
+
 
 
             //Filled Our DataGridView With The Results From Our Query Filled Into DataTable
@@ -92,38 +136,67 @@ namespace BIS345_Week6_Exercise7_BooksDB
 
 
             //**(Code Block 2 - END)**//
-
             //**MAIN LOGIC END**//
             
 
         }
-        //**(Code Block 1 - Load Course Books Button)**//
+        //**(Component 1 - Load Course Books Button)**//
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
+        //**(Component 2 - Testing The Database Connection)**//
         private void button3_Click(object sender, EventArgs e)
         {
+
+            //(Code Block 1 - START) - Establishing A Connection With The SQL Server Database
+            //(Code Block 1.1) - SQL Connection String Intilization
             String SQLConnectionString;
 
+            //(Code Block 1.2) - SQL Connection String Assigned Database Connection String Information
             SQLConnectionString = "Data Source=MORRESEMORRDED3;Initial Catalog=BIS345;Integrated Security=True;MultipleActiveResultSets=True";
 
+            //(Code Block 1.3) - Create An Object Of Type SqlConnection Named "SQLConnectionObject", Fed SQLConnectionString As The Parameter
             SqlConnection SQLConnectionObject = new SqlConnection(SQLConnectionString);
 
-            SQLConnectionObject.Open();
 
-            MessageBox.Show("Database Connection Test Is Successful!");
+
+            //#EXCEPTION 1 START//
+
+            try
+            {
+                //(Code Block 1.4) - The Connection Method Is Utilized To Create Open The Connection With The SQL Server Database
+                SQLConnectionObject.Open();
+                MessageBox.Show("Database Connection Test Is Successful!");
+                //(Code Block 1 - END)//
+            }
+
+
+            catch (System.Data.SqlClient.SqlException)
+            {
+
+                MessageBox.Show("Error With Connecting To The Database, Please Contact Your System Administrator Before Starting The Application Again");
+                System.Windows.Forms.Application.Exit();
+
+            }
+
+            //#EXCEPTION 1 END//
+
+
 
             SQLConnectionObject.Close();
 
         }
+        //**(Component 2 - Testing The Database Connection)**//
 
+        //**(Component 3 - Clearing The Data Grid)**//
         private void button2_Click(object sender, EventArgs e)
         {
             DataGridView1.DataSource = null;
 
         }
+        //**(Component 3 - Clearing The Data Grid)**//
     }
 }
