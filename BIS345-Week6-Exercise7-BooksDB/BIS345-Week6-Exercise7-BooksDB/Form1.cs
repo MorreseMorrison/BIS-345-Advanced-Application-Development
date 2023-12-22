@@ -19,7 +19,7 @@ using System.IO;
 //SQL Server Database, Executes The Query Given, Then Displays The Result On A Data Grid View. The Other Two Auiliary Functions Are The
 //"Test Database Connection Button" Which Tests If The Program Can Reach The Database. And The "Clear Grid Button" Which Clears The On Screen
 //Data Grid After The Query Results Are Shown. Exception Handling Is Utilized If The Program Can Not Reach The Database. Since The SQL Server
-//Is Local, An Exception Will Always Be Thrown Until The String Connection Is Set To A Cloud Database Solution.
+//Is Local, An Exception Will Always Be Thrown Until The String Connection Is Set To A Cloud Database Solution.33
 namespace BIS345_Week6_Exercise7_BooksDB
 {
     public partial class Form1 : Form
@@ -76,7 +76,7 @@ namespace BIS345_Week6_Exercise7_BooksDB
             //**(Code Block 2 - START)**// - Executing The Desired Query & Displaying The Result Onto A Data Grid View
             //(Code Block 2.1). Inner Join Query Between Three Tables "BookTable", "CourseBookTable", "PeirceCollegeCourseCatalogTable
             //This Query Should Select All Books, Their Course Number, Title, ISBN And Course Name, Only Three Results Should Show
-            string Sql_Query_1 = "SELECT  CourseBookTable.Course_Number, PeirceCollegeCourseCatalogTable.Course_Name, BookTable.Title, BookTable.ISBN" +
+            string Sql_Query_1 = "SELECT  CourseBookTable.Course_Number AS 'Course Number' , PeirceCollegeCourseCatalogTable.Course_Name AS 'Course Name', BookTable.Title AS 'Text Book Title' , BookTable.ISBN AS 'Text Book ISBN-10' " +
                 " FROM ((BookTable " +
                 "INNER JOIN CourseBookTable ON BookTable.ISBN = CourseBookTable.ISBN)" +
                 "INNER JOIN PeirceCollegeCourseCatalogTable ON CourseBookTable.Course_Number = PeirceCollegeCourseCatalogTable.Course_Number); ";
